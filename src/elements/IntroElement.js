@@ -2,6 +2,11 @@
 import React from 'react';
 import {Grid, Card, Image, Icon} from 'semantic-ui-react';
 
+/**
+ * Create a card holding my portrait, name, and job title
+ * 
+ * @returns {Element} JSX element Card containing information
+ */
 const DrawPortrait = () => (
     <Card centered>
         <Image src='/images/me.png' />
