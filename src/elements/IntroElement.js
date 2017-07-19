@@ -1,32 +1,99 @@
 // Import Components
 import React from 'react';
-import {Grid, Card, Image} from 'semantic-ui-react';
+import {Grid, Card, Image, Icon} from 'semantic-ui-react';
 
 const DrawPortrait = () => (
     <Card centered>
         <Image src='/images/me.png' />
         <Card.Content>
             <Card.Header>
-                Anthony Powell
+                <h1>Anthony Powell</h1>
             </Card.Header>
             <Card.Description>
-                Software Developer
+                <h4>Software Developer</h4>
             </Card.Description>
+            <Card.Meta>c. 2015</Card.Meta>
         </Card.Content>
     </Card>
 )
 
+/**
+ * Create a descriptive Card containing some information
+ * 
+ * @returns {Element} JSX element Card
+ */
 const DrawDescription = () => {
-    const desc = 'Anthony is cool';
+    const desc = (
+        <div>
+            <h4>Hey, thanks for stopping by my portfolio!</h4>
+            <p>My name is Anthony but most people call me Tony.</p>
+            <br></br>
+            <p>
+                While working on a Computer Science degree at Michigan Tech University,
+                I have engaged in multiple internships and personal projects. 
+            </p>
+            <p>
+                Most of my working time is spent with web technologies but I'm 
+                involved in a diverse set of tech disciplines, personally and professionally.
+            </p>
+            <br></br>
+            <p>
+                I built this portfolio in an attempt to demonstrate my development 
+                skills and display my experience.
+            </p>
+        </div>
+    );
     
     return (
         <Card fluid>
-            <Card.Content header='About Anthony' />
+            <Card.Content header='About Me' />
             <Card.Content description={desc} />
         </Card>
     )
 }
 
+/**
+ * Create a Card containing a Grid of links to relevant social media
+ * 
+ * @returns {Element} JSX element Card containing Grid
+ */
+const DrawLinks = () => {
+    const desc = (
+        <Grid columns={3} relaxed divided>
+            <Grid.Column>
+                <a href="https://github.com/cephalization/">
+                    <Icon name="github" />
+                    GitHub
+                </a>
+            </Grid.Column>
+            <Grid.Column>
+                <a href="https://linkedin.com/in/anthony-powell-05788696">
+                    <Icon name="linkedin" />
+                    LinkedIn
+                </a>
+            </Grid.Column>
+            <Grid.Column>
+                <a href="https://twitter.com/Cephalization">
+                    <Icon name="twitter" />
+                    Twitter
+                </a>                
+            </Grid.Column>
+        </Grid>
+    )
+
+    return (
+        <Card fluid>
+            <Card.Content header='Links' />
+            <Card.Content description={desc} />
+        </Card>
+    )
+}
+
+/**
+ * Create a Grid containing Cards of descriptive information about me
+ * 
+ * @returns {Element} JSX element containing a Grid of cards
+ */
 const IntroElement = () => {
     const element = (
         <Grid container stackable>
@@ -39,6 +106,7 @@ const IntroElement = () => {
                 <Grid.Column mobile={16} tablet={10} computer={12}>
                     <Card.Group stackable>
                         {DrawDescription()}
+                        {DrawLinks()}
                     </Card.Group>
                 </Grid.Column>
             </Grid.Row>
