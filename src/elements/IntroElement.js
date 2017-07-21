@@ -1,6 +1,8 @@
 // Import Components
 import React from 'react';
 import {Grid, Card, Image, Icon} from 'semantic-ui-react';
+// Import Assets
+import portrait from '../images/me.png';
 
 /**
  * Create a card holding my portrait, name, and job title
@@ -9,7 +11,7 @@ import {Grid, Card, Image, Icon} from 'semantic-ui-react';
  */
 const DrawPortrait = () => (
     <Card centered>
-        <Image src='/images/me.png' />
+        <Image src={portrait} />
         <Card.Content>
             <Card.Header>
                 <h1>Anthony Powell</h1>
