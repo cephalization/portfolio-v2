@@ -1,6 +1,6 @@
 // Import Components
 import React from 'react';
-import {Grid} from 'semantic-ui-react';
+import {Grid, Message} from 'semantic-ui-react';
 // Import Elements
 import IntroElement from '../elements/IntroElement';
 import JobsElement from '../elements/JobsElement';
@@ -53,6 +53,11 @@ class MainComponent extends React.Component {
 
     return (
       <div>
+        <Message warning>
+          <Message.Header>This Page is a Work in Progress!</Message.Header>
+          <p>I am in the process of re-writing my portfolio in React.</p>
+          <p>Follow its development <a href="https://github.com/cephalization/portfolio-v2">here</a></p>
+        </Message>
         {this.contentGrid(sections)}
       </div>
     )
