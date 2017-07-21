@@ -38,7 +38,7 @@ class MainComponent extends React.Component {
     }
 
     return (
-      <Grid divided='vertically'>
+      <Grid container divided='vertically'>
         {rows()}
       </Grid>
     )
