@@ -1,6 +1,6 @@
 // Import Components
 import React from "react";
-import {Item, List} from "semantic-ui-react";
+import {Item, List, Card} from "semantic-ui-react";
 
 /**
  * Object representation of a Job
@@ -135,10 +135,19 @@ const LoadJobs = () => {
 const JobsElement = () => {
   const jobs = LoadJobs();
 
-  const element = (
+  const content = (
     <Item.Group divided relaxed unstackable>
       {jobs}
     </Item.Group>
+  );
+
+  const element = (
+    <Card fluid>
+      <Card.Content header='Professional Experience' />
+      <Card.Content>
+        {content}
+      </Card.Content>
+    </Card>
   );
 
   return element;
