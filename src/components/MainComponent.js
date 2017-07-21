@@ -4,6 +4,7 @@ import {Grid, Message} from 'semantic-ui-react';
 // Import Elements
 import IntroElement from '../elements/IntroElement';
 import JobsElement from '../elements/JobsElement';
+import ProjectsElement from '../elements/ProjectsElement';
 
 class MainComponent extends React.Component {
   constructor() {
@@ -28,7 +29,7 @@ class MainComponent extends React.Component {
       let content = [];
       for (let i = 0, len = rowContent.length; i < len; i++) {
         content.push(
-          <Grid.Row key={i} stretched className='padding-fix'>
+          <Grid.Row key={i} stretched>
             {rowContent[i]()}
           </Grid.Row>
         )
@@ -48,7 +49,8 @@ class MainComponent extends React.Component {
   render() {
     const sections = [
       IntroElement,
-      JobsElement
+      JobsElement,
+      ProjectsElement
     ]
 
     return (
