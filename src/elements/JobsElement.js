@@ -65,6 +65,22 @@ const JobDescriptions = () => {
         </p>
       </div>,
       "May 2016 - Apr 2017"
+    ),
+    DefineJob(
+      "Center for Technology & Training",
+      "Student IT Administrator",
+      <div>
+        <List bulleted>
+          <List.Item>Writing windows batch scripts, linux shell scripts</List.Item>
+          <List.Item>Purchasing/setup/maintenance of computer hardware</List.Item>
+          <List.Item>Implementation and validation of established backup procedures</List.Item>
+        </List>
+        <p>
+            Communication was vital in order to clearly define needs and expectations.
+            Collaborative work was organized using an online ticketing system.
+        </p>
+      </div>,
+      "Sep 2014 - May 2016"
     )
   ];
 
