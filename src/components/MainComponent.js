@@ -3,6 +3,7 @@ import React from 'react';
 import {Grid} from 'semantic-ui-react';
 // Import Elements
 import IntroElement from '../elements/IntroElement';
+import JobsElement from '../elements/JobsElement';
 
 class MainComponent extends React.Component {
   constructor() {
@@ -27,7 +28,7 @@ class MainComponent extends React.Component {
       let content = [];
       for (let i = 0, len = rowContent.length; i < len; i++) {
         content.push(
-          <Grid.Row key={i}>
+          <Grid.Row key={i} stretched className='padding-fix'>
             {rowContent[i]()}
           </Grid.Row>
         )
@@ -37,7 +38,7 @@ class MainComponent extends React.Component {
     }
 
     return (
-      <Grid centered divided='vertically'>
+      <Grid divided='vertically'>
         {rows()}
       </Grid>
     )
@@ -46,7 +47,8 @@ class MainComponent extends React.Component {
   // Render all of the 'Elements' or 'Sections' of the page
   render() {
     const sections = [
-      IntroElement
+      IntroElement,
+      JobsElement
     ]
 
     return (

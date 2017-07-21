@@ -101,7 +101,7 @@ const DrawLinks = () => {
  */
 const IntroElement = () => {
     const element = (
-        <Grid container stackable>
+        <Grid centered container stackable>
             <Grid.Row>
                 <Grid.Column mobile={16} tablet={6} computer={4}>
                     <Card.Group>

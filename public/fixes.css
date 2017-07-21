@@ -1,0 +1,5 @@
+/* Fixes an issue in which Item.Group that is nested within Grid gets drawn past the display */
+.padding-fix {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
