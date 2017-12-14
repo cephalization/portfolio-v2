@@ -31,7 +31,23 @@ const JobDescriptions = () => {
   const jobs = [
     DefineJob(
       "Arbor Networks",
-      "Software Engineering Intern",
+      "Software Engineer (Remote)",
+      <div>
+        <List bulleted>
+          <List.Item>React development using React-Redux, ES6, and Jest/Jasmine.</List.Item>
+          <List.Item>RESTful API and backend development using Python, Flask, Marshmallow schemas. </List.Item>
+          <List.Item>UI/UX development using PHP, TWIG, JS, and HTML/CSS.</List.Item>
+        </List>
+        <p>
+          Primarily implementing feature work while participating in agile
+          methodologies, regular code review processes, and cross-team communications.
+        </p>
+      </div>,
+      "August 2017 - Present"
+    ),
+    DefineJob(
+      "Arbor Networks",
+      "Software Engineering Intern (Ann Arbor, MI)",
       <div>
         <List bulleted>
           <List.Item>
@@ -45,11 +61,11 @@ const JobDescriptions = () => {
           methodologies.
         </p>
       </div>,
-      "May 2017 - Present"
+      "May 2017 - August 2017"
     ),
     DefineJob(
       "Center for Technology & Training",
-      "Software Engineering Intern",
+      "Software Engineering Intern (Houghton, MI)",
       <div>
         <List bulleted>
           <List.Item>.NET Stack: Visual Studio, C#, ASP.NET</List.Item>
@@ -68,7 +84,7 @@ const JobDescriptions = () => {
     ),
     DefineJob(
       "Center for Technology & Training",
-      "Student IT Administrator",
+      "Student IT Administrator (Houghton, MI)",
       <div>
         <List bulleted>
           <List.Item>Writing windows batch scripts, linux shell scripts</List.Item>

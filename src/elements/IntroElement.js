@@ -10,8 +10,8 @@ import portrait from '../images/me.png';
  * @returns {Element} JSX element Card containing information
  */
 const DrawPortrait = () => (
-    <Card centered>
-        <Image src={portrait} />
+    <Card fluid centered>
+        <Image src={portrait} bordered />
         <Card.Content>
             <Card.Header>
                 <h1>Anthony Powell</h1>
@@ -45,14 +45,14 @@ const DrawDescription = () => {
             </p>
             <br></br>
             <p>
-                I built this portfolio in an attempt to demonstrate my development 
+                I have built this portfolio in an attempt to demonstrate my development 
                 skills and display my experience.
             </p>
         </div>
     );
     
     return (
-        <Card fluid>
+        <Card fluid centered>
             <Card.Content header='About Me' />
             <Card.Content description={desc} />
         </Card>
@@ -66,20 +66,20 @@ const DrawDescription = () => {
  */
 const DrawLinks = () => {
     const desc = (
-        <Grid columns={3} relaxed divided>
-            <Grid.Column>
+        <Grid columns={3} stretched divided>
+            <Grid.Column textAlign={"center"}>
                 <a href="https://github.com/cephalization/">
                     <Icon name="github" />
                     GitHub
                 </a>
             </Grid.Column>
-            <Grid.Column>
+            <Grid.Column textAlign={"center"}>
                 <a href="https://linkedin.com/in/anthony-powell-05788696">
                     <Icon name="linkedin" />
                     LinkedIn
                 </a>
             </Grid.Column>
-            <Grid.Column>
+            <Grid.Column textAlign={"center"}>
                 <a href="https://twitter.com/Cephalization">
                     <Icon name="twitter" />
                     Twitter
@@ -89,7 +89,7 @@ const DrawLinks = () => {
     )
 
     return (
-        <Card fluid>
+        <Card fluid centered>
             <Card.Content header='Links' />
             <Card.Content description={desc} />
         </Card>
@@ -103,9 +103,9 @@ const DrawLinks = () => {
  */
 const IntroElement = () => {
     const element = (
-        <Grid centered container stackable>
-            <Grid.Row>
-                <Grid.Column mobile={16} tablet={6} computer={4}>
+        <Grid stackable stretched>
+            <Grid.Row stretched>
+                <Grid.Column stretched mobile={16} tablet={6} computer={4}>
                     <Card.Group>
                         {DrawPortrait()}                        
                     </Card.Group>

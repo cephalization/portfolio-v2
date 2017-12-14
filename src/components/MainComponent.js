@@ -25,24 +25,29 @@ class MainComponent extends React.Component {
      * 
      * @returns {Array} pre-rendered Grids of content sections
      */
-    let rows = () => {
-      let content = [];
-      for (let i = 0, len = rowContent.length; i < len; i++) {
-        content.push(
-          <Grid.Row key={i} stretched>
-            {rowContent[i]()}
-          </Grid.Row>
-        )
-      }
-
-      return content;
-    }
-
-    return (
-      <Grid container divided='vertically'>
-        {rows()}
-      </Grid>
-    )
+      return (
+      <Grid container columns={16} divided='vertically'>
+        {
+          [
+            <Grid.Row key={0} centered>
+              <Message warning>
+                <Message.Header>This Page is a Work in Progress!</Message.Header>
+                <p>I am in the process of re-writing my portfolio in React.</p>
+                <p>Follow its development <a href="https://github.com/cephalization/portfolio-v2">here</a></p>
+              </Message>
+            </Grid.Row>
+          ]
+          .concat(
+            rowContent.map(
+              (row, i) => (
+                <Grid.Row key={i + 1} stretched>
+                  {row()}
+                </Grid.Row>
+              )
+            )
+          )
+        }
+      </Grid>)
   }
 
   // Render all of the 'Elements' or 'Sections' of the page
@@ -54,12 +59,7 @@ class MainComponent extends React.Component {
     ]
 
     return (
-      <div>
-        <Message warning>
-          <Message.Header>This Page is a Work in Progress!</Message.Header>
-          <p>I am in the process of re-writing my portfolio in React.</p>
-          <p>Follow its development <a href="https://github.com/cephalization/portfolio-v2">here</a></p>
-        </Message>
+      <div>        
         {this.contentGrid(sections)}
       </div>
     )

@@ -35,6 +35,45 @@ const DefineProject = (image, title, description, link, github) => {
 const ProjectDescriptions = () => {
     const projects = [
         DefineProject(
+            null,
+            'Kijenzi 3D Printing Tools',
+            <div>
+                <h4>
+                    Volunteered with a research group of PHDs and
+                    students to make 3D printing accessible to
+                    developing regions (targeting Africa).
+                </h4>
+                <h5>
+                    Responsible for designing, developing, and
+                    hosting a react application to allow a user
+                    to create dynamic forms for downloadable and
+                    parameterizable 3D printable componenents.
+                </h5>
+                <h5>
+                    Forms, their components, and file meta
+                    information are posted to a Node/Express/Firebase
+                    REST API with endpoint design and documentation
+                    led by myself and implemented with cross-country
+                    team collaboration. Information was further
+                    consumed by an android app built by another team.
+                </h5>
+                <List>
+                    <List.Item>
+                        <List.Header>Built Using:</List.Header>
+                        <List>
+                            <List.Item>React JS</List.Item>
+                            <List.Item>Semantic UI React</List.Item>
+                            <List.Item>Node w/ Express</List.Item>
+                            <List.Item>Firebase</List.Item>
+                        </List>
+                    </List.Item>
+                    
+                </List>
+            </div>,
+            null,
+            null
+        ),
+        DefineProject(
             valet_1,
             'Valet',
             <div>
@@ -78,8 +117,8 @@ const DrawProject = (projectInfo, key) => {
                 <Card.Description>{projectInfo.description}</Card.Description>
             </Card.Content>
             <Card.Content extra>
-                <a href={projectInfo.link}><Icon name='globe' link size={'large'} /></a>
-                <a href={projectInfo.github}><Icon name='github' link size={'large'} /></a>
+                <a disabled={projectInfo.link == null} href={projectInfo.link}><Icon name='globe' link size={'large'} /></a>
+                <a disabled={projectInfo.github == null} href={projectInfo.github}><Icon name='github' link size={'large'} /></a>
             </Card.Content>
         </Card>
     );
