@@ -26,7 +26,7 @@ class MainComponent extends React.Component {
      * @returns {Array} pre-rendered Grids of content sections
      */
       return (
-      <Grid container columns={16} divided='vertically'>
+      <Grid container columns={16} >
         {
           [
             <Grid.Row key={0} centered>
