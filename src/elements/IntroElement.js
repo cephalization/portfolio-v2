@@ -101,26 +101,22 @@ const DrawLinks = () => {
  * 
  * @returns {Element} JSX element containing a Grid of cards
  */
-const IntroElement = () => {
-    const element = (
-        <Grid stackable stretched>
-            <Grid.Row stretched>
-                <Grid.Column stretched mobile={16} tablet={6} computer={4}>
-                    <Card.Group>
-                        {DrawPortrait()}                        
-                    </Card.Group>
-                </Grid.Column>
-                <Grid.Column mobile={16} tablet={10} computer={12}>
-                    <Card.Group stackable>
-                        {DrawDescription()}
-                        {DrawLinks()}
-                    </Card.Group>
-                </Grid.Column>
-            </Grid.Row>
-        </Grid>
-    );
-
-    return element;
-}
+const IntroElement = () => (
+    <Grid stackable stretched>
+        <Grid.Row stretched>
+            <Grid.Column stretched mobile={16} tablet={6} computer={4}>
+                <Card.Group>
+                    {DrawPortrait()}                        
+                </Card.Group>
+            </Grid.Column>
+            <Grid.Column mobile={16} tablet={10} computer={12}>
+                <Card.Group stackable>
+                    {DrawDescription()}
+                    {DrawLinks()}
+                </Card.Group>
+            </Grid.Column>
+        </Grid.Row>
+    </Grid>
+);
 
 export default IntroElement;

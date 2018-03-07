@@ -148,25 +148,15 @@ const LoadJobs = () => {
  * 
  * @returns {Element} Item.Group containing job history
  */
-const JobsElement = () => {
-  const jobs = LoadJobs();
-
-  const content = (
-    <Item.Group divided relaxed unstackable>
-      {jobs}
-    </Item.Group>
-  );
-
-  const element = (
-    <Card fluid>
-      <Card.Content header='Professional Experience' />
-      <Card.Content>
-        {content}
-      </Card.Content>
-    </Card>
-  );
-
-  return element;
-};
+const JobsElement = () => (
+  <Card fluid>
+    <Card.Content header='Professional Experience' />
+    <Card.Content>
+      <Item.Group divided relaxed unstackable>
+        {LoadJobs()}
+      </Item.Group>
+    </Card.Content>
+  </Card>
+);
 
 export default JobsElement;

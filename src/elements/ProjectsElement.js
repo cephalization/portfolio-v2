@@ -147,21 +147,15 @@ const LoadProjects = () => {
  * 
  * @returns {Element} Card containing projects
  */
-const ProjectsElement = () => {
-    const projects = LoadProjects();
-
-    const element = (
-        <Card fluid>
-            <Card.Content header='Projects'/>
-            <Card.Content>
-                <Card.Group itemsPerRow={3} stackable>
-                    {projects}
-                </Card.Group>
-            </Card.Content>
-        </Card>
-    );
-
-    return element;
-}
+const ProjectsElement = () => (
+    <Card fluid>
+        <Card.Content header='Projects'/>
+        <Card.Content>
+            <Card.Group itemsPerRow={3} stackable>
+                {LoadProjects()}
+            </Card.Group>
+        </Card.Content>
+    </Card>
+);
 
 export default ProjectsElement;
