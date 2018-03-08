@@ -2,7 +2,7 @@
   "name": "portfolio-v2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cephalization.github.io/portfolio-v2",
+  "homepage": "http://localhost:8080/",
   "dependencies": {
     "gh-pages": "^1.0.0",
     "react": "^15.6.1",
