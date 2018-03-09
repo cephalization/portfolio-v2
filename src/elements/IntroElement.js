@@ -38,10 +38,8 @@ const DrawDescription = () => {
             <p>
                 While working on a Computer Science degree at Michigan Tech University,
                 I have engaged in multiple internships and personal projects. 
-            </p>
-            <p>
-                Most of my working time is spent with web technologies but I'm 
-                involved in a diverse set of tech disciplines, personally and professionally.
+                Most of my working time is spent with web technologies but I'm involved
+                in a diverse set of tech disciplines.
             </p>
             <br></br>
             <p>

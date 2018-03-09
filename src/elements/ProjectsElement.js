@@ -43,20 +43,20 @@ const ProjectDescriptions = () => {
                     students to make 3D printing accessible to
                     developing regions (targeting Africa).
                 </h4>
-                <h5>
+                <p>
                     Responsible for designing, developing, and
                     hosting a react application to allow a user
                     to create dynamic forms for downloadable and
                     parameterizable 3D printable componenents.
-                </h5>
-                <h5>
+                </p>
+                <p>
                     Forms, their components, and file meta
                     information are posted to a Node/Express/Firebase
                     REST API with endpoint design and documentation
                     led by myself and implemented with cross-country
                     team collaboration. Information was further
                     consumed by an android app built by another team.
-                </h5>
+                </p>
                 <List>
                     <List.Item>
                         <List.Header>Built Using:</List.Header>
