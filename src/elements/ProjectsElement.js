@@ -95,7 +95,7 @@ const ProjectDescriptions = () => {
                     
                 </List>
             </div>,
-            'http://takemykeys.me',
+            'http://anthonypowell.me/valet/',
             'https://github.com/cephalization/Valet'
         )
     ];
