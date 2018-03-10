@@ -36,6 +36,37 @@ const ProjectDescriptions = () => {
     const projects = [
         DefineProject(
             null,
+            'Spotlight: Meta Music Tool',
+            <div>
+                <h4>
+                    Spotlight is a React app that will allow
+                    users to keep track of, and view meta information
+                    on, their favorite music artists.
+                </h4>
+                <p>
+                    This project is in development but demonstrates sane
+                    architecure, modern development practices, and 'clean'
+                    design philosphies.
+                </p>
+                <List>
+                    <List.Item>
+                        <List.Header>Built Using:</List.Header>
+                        <List>
+                            <List.Item>React JS</List.Item>
+                            <List.Item>Semantic UI React</List.Item>
+                            <List.Item>CENTOS Digital Ocean Droplet</List.Item>
+                            <List.Item>Node w/ Express</List.Item>
+                            <List.Item>Firebase</List.Item>
+                        </List>
+                    </List.Item>
+                    
+                </List>
+            </div>,
+            null,
+            null
+        ),
+        DefineProject(
+            null,
             'Kijenzi 3D Printing Tools',
             <div>
                 <h4>
@@ -95,8 +126,8 @@ const ProjectDescriptions = () => {
                     
                 </List>
             </div>,
-            'http://anthonypowell.me/valet/',
-            'https://github.com/cephalization/Valet'
+            'http://anthonypowell.me/spotlight/',
+            'https://github.com/cephalization/spotlight'
         )
     ];
 
