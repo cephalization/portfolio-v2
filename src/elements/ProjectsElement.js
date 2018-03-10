@@ -62,8 +62,8 @@ const ProjectDescriptions = () => {
                     
                 </List>
             </div>,
-            null,
-            null
+            'http://anthonypowell.me/spotlight/',
+            'https://github.com/cephalization/spotlight/'
         ),
         DefineProject(
             null,
@@ -126,8 +126,8 @@ const ProjectDescriptions = () => {
                     
                 </List>
             </div>,
-            'http://anthonypowell.me/spotlight/',
-            'https://github.com/cephalization/spotlight'
+            'http://anthonypowell.me/valet/',
+            'https://github.com/cephalization/valet/'
         )
     ];
 
