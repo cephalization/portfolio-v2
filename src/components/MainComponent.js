@@ -19,26 +19,13 @@ const ContentGrid = ({ children }) => (
    * @returns {Element} pre-rendered Grids of content sections
    */
   <Grid container columns={16} >
-    {
-      [
-        <Grid.Row key={0} centered>
-          <Message warning>
-            <Message.Header>This Page is a Work in Progress!</Message.Header>
-            <p>I am in the process of re-writing my portfolio in React.</p>
-            <p>Follow its development <a href="https://github.com/cephalization/portfolio-v2">here</a></p>
-          </Message>
+    {children.map(
+      (row, i) => (
+        <Grid.Row key={i + 1} stretched>
+          {row}
         </Grid.Row>
-      ]
-      .concat(
-        children.map(
-          (row, i) => (
-            <Grid.Row key={i + 1} stretched>
-              {row}
-            </Grid.Row>
-          )
-        )
       )
-    }
+    )}
   </Grid>
 );
 
