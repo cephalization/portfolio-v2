@@ -52,11 +52,10 @@ const ProjectDescriptions = () => {
                     <List.Item>
                         <List.Header>Built Using:</List.Header>
                         <List>
-                            <List.Item>React JS</List.Item>
+                            <List.Item>React.js</List.Item>
                             <List.Item>Semantic UI React</List.Item>
                             <List.Item>CENTOS Digital Ocean Droplet</List.Item>
                             <List.Item>Node w/ Express</List.Item>
-                            <List.Item>Firebase</List.Item>
                         </List>
                     </List.Item>
                     
@@ -92,7 +91,7 @@ const ProjectDescriptions = () => {
                     <List.Item>
                         <List.Header>Built Using:</List.Header>
                         <List>
-                            <List.Item>React JS</List.Item>
+                            <List.Item>React.js</List.Item>
                             <List.Item>Semantic UI React</List.Item>
                             <List.Item>Node w/ Express</List.Item>
                             <List.Item>Firebase</List.Item>
@@ -148,8 +147,8 @@ const DrawProject = (projectInfo, key) => {
                 <Card.Description>{projectInfo.description}</Card.Description>
             </Card.Content>
             <Card.Content extra>
-                <a disabled={projectInfo.link == null} href={projectInfo.link}><Icon name='globe' link size={'large'} /></a>
-                <a disabled={projectInfo.github == null} href={projectInfo.github}><Icon name='github' link size={'large'} /></a>
+                <a href={projectInfo.link}><Icon disabled={projectInfo.link == null} name='globe' link size={'large'} /></a>
+                <a href={projectInfo.github}><Icon disabled={projectInfo.link == null} name='github' link size={'large'} /></a>
             </Card.Content>
         </Card>
     );

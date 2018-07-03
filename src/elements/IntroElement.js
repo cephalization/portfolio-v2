@@ -17,9 +17,9 @@ const DrawPortrait = () => (
                 <h1>Anthony Powell</h1>
             </Card.Header>
             <Card.Description>
-                <h4>Software Developer</h4>
+                <h4>Software Engineer</h4>
             </Card.Description>
-            <Card.Meta>c. 2015</Card.Meta>
+            <Card.Meta>Arbor Networks</Card.Meta>
         </Card.Content>
     </Card>
 )
@@ -34,18 +34,15 @@ const DrawDescription = () => {
         <div>
             <h4>Hey, thanks for stopping by my portfolio!</h4>
             <p>My name is Anthony but most people call me Tony.</p>
-            <br></br>
             <p>
                 While working on a Computer Science degree at Michigan Tech University,
-                I have engaged in multiple internships and personal projects. 
+                I have engaged in full time software engineering, multiple internships, and personal projects. 
+            </p>
+            <p>
                 Most of my working time is spent with web technologies but I'm involved
                 in a diverse set of tech disciplines.
             </p>
-            <br></br>
-            <p>
-                I have built this portfolio in an attempt to demonstrate my development 
-                skills and display my experience.
-            </p>
+            <p>Feel free to reach out to me at any of the links below!</p>
         </div>
     );
     

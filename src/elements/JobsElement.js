@@ -34,7 +34,7 @@ const JobDescriptions = () => {
       "Software Engineer (Remote)",
       <div>
         <List bulleted>
-          <List.Item>React development using React-Redux, ES6, and Jest/Jasmine.</List.Item>
+          <List.Item>React.js development using Redux, React-Redux, ES6/7, and Karma/Enzyme/Jasmine.</List.Item>
           <List.Item>RESTful API and backend development using Python, Flask, Marshmallow schemas. </List.Item>
           <List.Item>UI/UX development using PHP, TWIG, JS, and HTML/CSS.</List.Item>
         </List>
@@ -54,7 +54,7 @@ const JobDescriptions = () => {
             UI/UX development using PHP, TWIG, JS, and HTML/CSS.
           </List.Item>
           <List.Item>RESTful API development using Python.</List.Item>
-          <List.Item>Some React development done.</List.Item>
+          <List.Item>React.js development.</List.Item>
         </List>
         <p>
           Primarily implementing feature work while participating in agile

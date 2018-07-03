@@ -1,6 +1,6 @@
 // Import Components
 import React from 'react';
-import {Grid, Message} from 'semantic-ui-react';
+import { Grid } from 'semantic-ui-react';
 // Import Elements
 import IntroElement from '../elements/IntroElement';
 import JobsElement from '../elements/JobsElement';
@@ -18,7 +18,7 @@ const ContentGrid = ({ children }) => (
    * 
    * @returns {Element} pre-rendered Grids of content sections
    */
-  <Grid container columns={16} >
+  <Grid container columns={16}>
     {children.map(
       (row, i) => (
         <Grid.Row key={i + 1} stretched>
