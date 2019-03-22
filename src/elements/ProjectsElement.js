@@ -61,7 +61,7 @@ const ProjectDescriptions = () => {
                     
                 </List>
             </div>,
-            'http://anthonypowell.me/spotlight/',
+            'https://spotlight.now.sh/',
             'https://github.com/cephalization/spotlight/'
         ),
         DefineProject(
