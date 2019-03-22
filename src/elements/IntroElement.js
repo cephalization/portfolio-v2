@@ -17,9 +17,9 @@ const DrawPortrait = () => (
                 <h1>Anthony Powell</h1>
             </Card.Header>
             <Card.Description>
-                <h4>Software Engineer</h4>
+                <h4>Full Stack Software Developer</h4>
             </Card.Description>
-            <Card.Meta>Arbor Networks</Card.Meta>
+            <Card.Meta>Ambyint</Card.Meta>
         </Card.Content>
     </Card>
 )
