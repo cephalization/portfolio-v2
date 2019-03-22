@@ -34,8 +34,8 @@ class MainComponent extends React.Component {
   render = () => (
     <ContentGrid>
       <IntroElement />
-      <JobsElement />
       <ProjectsElement />
+      <JobsElement />
     </ContentGrid>
   );
 }
