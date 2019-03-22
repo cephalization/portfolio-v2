@@ -30,6 +30,23 @@ const DefineJob = (company, title, description, timeframe) => {
 const JobDescriptions = () => {
   const jobs = [
     DefineJob(
+      "Ambyint",
+      "Full Stack Software Developer (Remote)",
+      <div>
+        <List bulleted>
+          <List.Item>Modern ES5/ES6/ESX Javascript (Ecmascript) development</List.Item>
+          <List.Item>React.js, Redux, RxJS observables, frontend development</List.Item>
+          <List.Item>Node.js back-end API and service development within a CQRS microservice driven architecture</List.Item>
+          <List.Item>Contemporary cloud based collaboration tools used to collaborate remotely and drive features from vision to completion</List.Item>
+        </List>
+        <p>
+          Responsible for turning sketch mockups and user driven workflows into tangible features
+          through development on the entire tech stack. 
+        </p>
+      </div>,
+      "November 2018 - Present"
+    ),
+    DefineJob(
       "Arbor Networks",
       "Software Engineer (Remote)",
       <div>
@@ -43,7 +60,7 @@ const JobDescriptions = () => {
           methodologies, regular code review processes, and cross-team communications.
         </p>
       </div>,
-      "August 2017 - Present"
+      "August 2017 - November 2018"
     ),
     DefineJob(
       "Arbor Networks",
